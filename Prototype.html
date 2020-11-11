@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Digital Prototyping for HVAC in a Hurry</title>
+	<link rel="stylesheet" href="prototype.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src = "prototype.js"></script>
+</head>
+<body>
+<div class="top-bar">
+  <ul class="nav-list">
+    <li><a href="#">Homes</a></li>
+    <li><a href="#">Parts</a></li>
+    <li><a href="#">Search</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+
+  <div id="search-box">
+    <input type="text" name="parts-search" placeholder="Mfg., Model, or Part Number" size=30>
+  </div>
+</div>
+
+<div id="toggle-search">
+  <img src="https://www.alexandercowan.com/wp-content/uploads/2018/01/show-hide-icon.png" alt="search control toggle">
+</div>
+
+<div id="search-controls">
+  <div id="result-sort">
+    Sort By
+    <select>
+      <option value="None">Popularity</option>
+      <option value="Acme">Price</option>
+      <option value="Bacme">Manufacturer</option>
+    </select>
+  </div>
+  <div id="filter-parts">
+    Search By
+    <select id="dd-mfr">
+      <option value="All">Manufacturer</option>
+      <option value="Acme">Acme</option>
+      <option value="Bacme">Bacme</option>
+      <option value="Cacme">Cacme</option>
+      <option value="Dacme">Dacme</option>
+    </select>
+    <select id="dd-model">
+      <option value="All">Model</option>
+      <option value="TooCool">TooCool</option>
+      <option value="TooHot">TooHot</option>
+      <option value="JustRight">JustRight</option>
+      <option value="Coolerator">Coolerator</option>
+    </select>
+    <select id="dd-stype">
+      <option value="All">Type</option>
+      <option value="Sniggler">Sniggler</option>
+      <option value="Wiggler">Wiggler</option>
+      <option value="Jiggler">Jiggler</option>
+      <option value="Tiggler">Tiggler</option>
+    </select>
+     </div>
+    <div id="partsearch">
+    <!--
+    <option value="All">Type</option>
+      <option value="GR1688">GR1688</option>
+      <option value="BR2048">BR2048</option>
+      <option value="TR0988">TR0988</option>
+      <option value="RT761">RT761</option>
+      -->
+  <label for="partsrch">Enter part #</label>
+    <input type="text" id="partnumber" name="partsrch" placeholder="(Part Number)" size=8>
+  </div>
+  <button type="button" id='search-btn'>Search</button>
+</div>
+<div id="parts-content">
+  <div class="catalog-part" mfr="Acme" model="TooCool" stype="Sniggler" part="GR1688">
+    <img src="https://www.alexandercowan.com/wp-content/uploads/2017/12/PCB-board-150px.png" alt="PCB board">
+    <div class="overlay">
+      <p>
+        Acme #GR1688<br>87 Orders<br>$12.30 Same Day</p>
+    </div>
+    <div class="description">
+      <p>
+       Sniggler board<br>Part#: #GR1688<br>$12.30<br>Ordered 87 times in the last 90 days<br>Availability: <br>Available for same day pickup<br>Description<br>Make: Acme<br>Model: Toocool<br>Type: Sniggler<br></p>
+    </div>
+  </div>
+  <div class="catalog-part" mfr="Bacme" model="TooHot" stype="Wiggler" part="BR2048">
+    <img src="https://www.alexandercowan.com/wp-content/uploads/2017/12/hvac-fan-photo-2-post-150px.png" alt="PCB board">
+    <div class="overlay">
+      <p>
+        Bacme #BR2048<br>301 Orders<br>$9.20 Two Day</p>
+    </div>
+    <div class="description">
+      <p>
+       Wiggler board<br>Part#: #BR2048<br>$9.20<br>Ordered 301 times<br>Availability: <br>Available at 2 day delivery<br>Description<br>Make: Bacme<br>Model: Toohot<br>Type: Wiggler<br></p>
+    </div>
+  </div>
+  <div class="catalog-part" mfr="Dacme" model="JustRight" stype="Jiggler" part="TR0988">
+    <img src="https://www.alexandercowan.com/wp-content/uploads/2017/12/hvac-board-4-post-150px.png" alt="PCB board 2">
+    <div class="overlay">
+      <p>
+        Dacme #TR0988<br>12 Orders<br>$11.70 Same Day</p>
+    </div>
+    <div class="description">
+      <p>
+       Jiggler board<br>Part#: #TR0988<br>$11.70<br>Ordered 12 times<br>Availability: <br>Available for same day pickup<br>Description<br>Make: Dacme<br>Model: JustRight<br>Type: Jiggler<br></p>
+    </div>
+  </div>
+  <div class="catalog-part" mfr="Cacme" model="TooHot" stype="Tiggler" part="RT761">
+    <img src="https://www.alexandercowan.com/wp-content/uploads/2017/12/hvac-metal-part-post-150px.png" alt="PCB board">
+    <div class="overlay">
+      <p>
+        Cacme #RT7612<br>87 Orders<br>$90.34 Same Day</p>
+    </div>
+    <div class="description">
+      <p>
+       Tiggler board<br>Part#: #RT761<br>$90.34<br>Ordered 87 times<br>Availability: <br>Available for same day pickup<br>Description<br>Make: Cacme<br>Model: TooHot<br>Type: Tiggler<br></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
