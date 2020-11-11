@@ -1,1 +1,2 @@
-# Digital-Prototyping-for-HVAC-in-a-Hurry
+Tai yra „Coding for Designers, Managers, & Entrepreneurs II“ "Coursera" kurso užduotis „Digital Prototyping for HVAC in a Hurry“, kurioje buvo pateiktas HTML ir CSS ir JavaScript/
+jQuery kodas, kuriame yra sukurtas parduotuvės prototipas su filtravimu ir paieška ir reikia pakoreguoti JavaScript kodą taip, kad galima būtų ieškoti pagal prekės numerį ir panaudojus filtrą arba paiešką, kartu su preke atsirastų ir jos aprašymas.
